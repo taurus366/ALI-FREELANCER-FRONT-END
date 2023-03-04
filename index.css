@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  padding: 40px 0;
+  background-color: #1f2235;
+}
+.nav-bar > ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav-bar > ul > li > a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav-bar > ul > li > a:hover {
+  color: #ff4a57;
+  transition: 0.5s;
+}
+
+div.index-container > section.hello-page > ul {
+  display: flex;
+  list-style: none;
+}
+div.index-container > section.hello-page > ul > li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 20px;
+}
+div.index-container > section.hello-page > ul > li > a {
+  display: block;
+  color: unset;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 3px;
+  border-style: solid;
+  border-color: #ff4a57;
+}
+div.index-container > section.hello-page > ul > li > a i {
+  font-weight: 900;
+  font-size: 60px;
+}
+div.index-container > section.hello-page > ul > li > a:hover {
+  color: #ff4a57;
+  font-weight: 900;
+  transition: 0.5s;
+}
+div.index-container > section.hello-page > ul > li > a:hover img {
+  filter: invert(38%) sepia(53%) saturate(1634%) hue-rotate(323deg) brightness(109%) contrast(114%);
+  transition: 0.3s;
+}
+div.index-container > section.hello-page > ul > li:nth-child(2) > a {
+  width: 60px;
+  position: relative;
+  height: 61px;
+}
+div.index-container > section.hello-page > ul > li:nth-child(2) > a > img {
+  width: 67.5px;
+  height: auto;
+  position: absolute;
+  left: -4.5px;
+  top: -4px;
+}/*# sourceMappingURL=index.css.map */
