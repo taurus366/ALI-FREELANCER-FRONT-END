@@ -3,6 +3,12 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .nav-bar {
@@ -19,6 +25,7 @@
 .nav-bar > ul > li > a {
   color: #ffffff;
   text-decoration: none;
+  font-size: 18px;
 }
 .nav-bar > ul > li > a:hover {
   color: #ff4a57;
@@ -27,7 +34,7 @@
 
 div.index-container > section.hello-page {
   position: relative;
-  background: #24263B;
+  background: #24263b;
   padding-bottom: 50px;
 }
 div.index-container > section.hello-page > section.hello-page-div {
@@ -43,6 +50,10 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
   display: flex;
   list-style: none;
 }
+div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li:nth-child(1) {
+  position: relative;
+  left: 0.5px;
+}
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li {
   list-style: none;
   display: inline-block;
@@ -52,19 +63,16 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
   display: block;
   color: unset;
   text-align: center;
-  border-radius: 50%;
   font-size: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: 3px;
-  border-style: solid;
-  border-color: #ff4a57;
   color: white;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li > a i {
   font-weight: 900;
   font-size: 60px;
+  height: 60px;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li > a > img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(12%) hue-rotate(194deg) brightness(103%) contrast(104%);
@@ -82,16 +90,22 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
   padding-left: 0;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li:nth-child(2) > a {
-  width: 60px;
+  width: 66px;
   position: relative;
-  height: 61px;
+  height: 69px;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li:nth-child(2) > a > img {
   width: 67.5px;
-  height: auto;
+  height: 69px;
   position: absolute;
   left: -4.5px;
   top: -4px;
+}
+div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li:nth-child(3) > a {
+  height: 71px;
+}
+div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li:nth-child(3) > a > i {
+  font-size: 66px;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-name {
   color: white;
@@ -123,18 +137,22 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-background-name > p {
   position: relative;
   color: white;
-  font-size: 80px;
+  font-size: 40px;
   letter-spacing: 50px;
   font-family: "Tangerine", cursive;
   transform: rotate(334deg);
-  top: -195px;
-  left: 50px;
+  top: -270px;
+  left: 148px;
   opacity: 0.2;
+  overflow: hidden;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-picture {
   position: absolute;
-  top: 10px;
-  left: 53%;
+  top: 0px;
+  left: 65%;
+}
+div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-picture > img {
+  height: 512px;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-portfolio-btn {
   width: -moz-fit-content;
@@ -157,7 +175,7 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
 }
 div.index-container > section.services-page {
   padding-top: 100px;
-  background-color: #1F2235;
+  background-color: #1f2235;
 }
 div.index-container > section.services-page > article.services-page-title {
   text-align: center;
@@ -174,4 +192,26 @@ div.index-container > section.services-page > article.services-page-title > p {
   width: 50%;
   margin: auto;
   margin-top: 15px;
+  color: white;
+  font-size: 17px;
+}
+div.index-container > section.services-page > article.services-page-space {
+  border: 2px;
+  border-style: solid;
+  width: 50px;
+  margin: auto;
+  color: #ff4a57;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 894px) {
+  article.hello-page-owner-picture {
+    left: 57% !important;
+  }
+}
+@media only screen and (max-width: 778px) {
+  article.hello-page-owner-picture {
+    display: none;
+  }
 }/*# sourceMappingURL=index.css.map */
