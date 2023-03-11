@@ -9,9 +9,9 @@
 }
 
 html, body {
-  overflow-y: hidden;
-  // overflow-x: hidden;
-  overflow: hidden;
+  // overflow-y: hidden;
+  overflow-x: hidden;
+  // overflow: hidden;
 }
 
 // html, body, main {
@@ -121,13 +121,9 @@ div.index-container {
               width: 66px;
               position: relative;
               height: 69px;
-              // border: 3px;
-              // border-style: solid;
-              // border-color: #ff4a57;
-              //  border-radius: 50%;
               & > img {
                 width: 67.5px;
-                height: 69px;
+                height: 68.9px;
                 position: absolute;
                 left: -4.5px;
                 top: -4px;
@@ -138,7 +134,7 @@ div.index-container {
             & > a {
               height: 71px;
               & > i {
-                font-size: 66px;
+                font-size: 60px;
               }
             }
            
@@ -203,7 +199,7 @@ div.index-container {
         top: 0px;
         left: 65%;
         & > img {
-          height: 512px;
+          height: 516px;
         }
       }
 

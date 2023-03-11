@@ -7,8 +7,7 @@
 }
 
 html, body {
-  overflow-y: hidden;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .nav-bar {
@@ -96,7 +95,7 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li:nth-child(2) > a > img {
   width: 67.5px;
-  height: 69px;
+  height: 68.9px;
   position: absolute;
   left: -4.5px;
   top: -4px;
@@ -105,7 +104,7 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
   height: 71px;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul > li:nth-child(3) > a > i {
-  font-size: 66px;
+  font-size: 60px;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-name {
   color: white;
@@ -152,7 +151,7 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
   left: 65%;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-picture > img {
-  height: 512px;
+  height: 516px;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-portfolio-btn {
   width: -moz-fit-content;
