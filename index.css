@@ -151,7 +151,7 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
   left: 65%;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-picture > img {
-  height: 516px;
+  height: 615px;
 }
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-portfolio-btn {
   width: -moz-fit-content;
@@ -204,13 +204,74 @@ div.index-container > section.services-page > article.services-page-space {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 894px) {
+.services-whatcando {
+  max-width: 1170px;
+  margin: auto;
+  margin-top: 100px;
+}
+.services-whatcando > .services-whatcando-ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.services-whatcando > .services-whatcando-ul > li {
+  width: 350px;
+  background-color: #23263A;
+  border-radius: 20px;
+  padding: 10px;
+}
+.services-whatcando > .services-whatcando-ul > li > article.services-icon {
+  color: #ff4a57;
+  font-size: 50px;
+}
+.services-whatcando > .services-whatcando-ul > li > article.services-title {
+  color: white;
+}
+.services-whatcando > .services-whatcando-ul > li > article.services-text {
+  color: rgb(226, 226, 226);
+  font-size: 18px;
+}
+.services-whatcando > .services-whatcando-ul > li > article {
+  margin: 20px 0;
+}
+.services-whatcando > .services-whatcando-ul > li > .services-icon > i {
+  transition: 1s;
+}
+.services-whatcando > .services-whatcando-ul > li:hover {
+  background-color: #ff4a57;
+  transition: 1s;
+}
+.services-whatcando > .services-whatcando-ul > li:hover > .services-icon > i {
+  transition: transform 1s ease-in-out, color 1s ease-in-out;
+  transform: rotateY(-360deg);
+  color: white;
+}
+
+@media only screen and (max-width: 1098px) {
+  article.hello-page-owner-picture {
+    left: 60% !important;
+  }
+  article.hello-page-owner-picture > img {
+    height: 643px !important;
+  }
+}
+@media only screen and (max-width: 900px) {
   article.hello-page-owner-picture {
     left: 57% !important;
+  }
+  article.hello-page-owner-picture > img {
+    height: 676px !important;
   }
 }
 @media only screen and (max-width: 778px) {
   article.hello-page-owner-picture {
     display: none;
+  }
+  div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul {
+    justify-content: center;
+  }
+  div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-name > p {
+    width: unset;
   }
 }/*# sourceMappingURL=index.css.map */

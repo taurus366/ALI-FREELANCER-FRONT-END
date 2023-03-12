@@ -27,12 +27,16 @@ $helloPageBackgroundColor: #24263b;
 $servicesPageBackgroundColor: #1f2235;
 $mainColor: $navBarTextHoverColor;
 
+@mixin maxWidth() {
+  max-width: 1170px;
+  margin: auto;
+}
+
 .nav-bar {
   padding: 40px 0;
   background-color: $backgroundNavBar;
   & > ul {
-    max-width: 1170px;
-    margin: auto;
+   @include maxWidth();
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
@@ -55,8 +59,7 @@ div.index-container {
     padding-bottom: 50px;
     & > section.hello-page-div {
       width: 93%;
-      max-width: 1170px;
-      margin: auto;
+      @include maxWidth();
       & > article.hello-page-urls {
         padding-top: 120px;
         margin-bottom: 50px;
@@ -199,7 +202,8 @@ div.index-container {
         top: 0px;
         left: 65%;
         & > img {
-          height: 516px;
+          // height: 516px;
+          height: 615px;
         }
       }
 
@@ -262,11 +266,88 @@ div.index-container {
   }
 }
 
+.services-whatcando {
+  
+  @include maxWidth();
+  margin-top: 100px;
 
-@media only screen and (max-width: 894px) {
+  & > .services-whatcando-ul {
+      
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: none;;
+
+      & > li {
+        
+        width: 350px;
+        // border: 3px solid none;
+        background-color: #23263A;
+        border-radius: 20px;
+        padding: 10px;
+
+        & > article.services-icon {
+          color: $mainColor;
+          font-size: 50px;
+        }
+
+        & > article.services-title {
+          color: white;
+        }
+
+        & > article.services-text {
+          color: rgb(226, 226, 226);
+          font-size: 18px;
+        }
+
+        & > article {
+          margin: 20px 0;
+        }
+
+        & > .services-icon > i {
+          transition: 1s;
+        }
+
+        &:hover {
+          background-color: $mainColor;
+          transition: 1s;
+
+          & > .services-icon > i {
+            transition: transform 1s ease-in-out, color 1s ease-in-out;
+            transform: rotateY(-360deg);
+            color: white;           
+          }
+
+        }
+
+
+
+      }
+
+
+  }
+
+}
+
+
+@media only screen and (max-width: 1098px) {
+  article.hello-page-owner-picture {
+     left: 60% !important;
+     & > img {
+       // height: 516px;
+       height: 643px !important;
+     }
+   }
+ }
+
+@media only screen and (max-width: 900px) {
   article.hello-page-owner-picture {
     // display: none;
     left: 57% !important;
+    & > img {
+      // height: 516px;
+      height: 676px !important;
+    }
   }
 }
 
@@ -274,4 +355,15 @@ div.index-container {
   article.hello-page-owner-picture {
     display: none;
   }
+
+  div.index-container > section.hello-page > section.hello-page-div > article.hello-page-urls > ul {
+    justify-content: center;
+  }
+
+  div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-name > p {
+    width: unset;
+  }
+
 }
+
+
