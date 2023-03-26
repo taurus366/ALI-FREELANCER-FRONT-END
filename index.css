@@ -194,7 +194,8 @@ div.index-container > section.services-page > article.services-page-title > p {
   color: white;
   font-size: 17px;
 }
-div.index-container > section.services-page > article.services-page-space {
+
+article.space-page {
   border: 2px;
   border-style: solid;
   width: 50px;
@@ -323,4 +324,131 @@ nav.nav-bar > .phone-style > li > a {
 .p-active {
   visibility: visible !important;
   opacity: 1 !important;
+}
+
+section.about-me-page {
+  background: #24263b;
+  padding-top: 80px;
+}
+section.about-me-page > article.about-me-page-title {
+  max-width: 1170px;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+section.about-me-page > article.about-me-page-title > h1 {
+  font-size: 50px;
+}
+section.about-me-page > article.about-me-page-title > p {
+  width: 50%;
+  margin: auto;
+  margin-top: 15px;
+  color: white;
+  font-size: 17px;
+}
+
+.about-me-page-pictures-infos-phones {
+  padding-bottom: 80px;
+  display: flex;
+  max-width: 1170px;
+  margin: auto;
+  justify-content: center;
+  color: white;
+}
+.about-me-page-pictures-infos-phones > .about-me-page-infos {
+  width: 57%;
+  margin-top: 30px;
+}
+.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-info > p {
+  margin-top: 10px;
+}
+.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info {
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+}
+.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70%;
+  margin-top: 20px;
+}
+.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex > .about-me-page-phones-info > article {
+  margin: 10px 0;
+}
+.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex > .about-me-page-phones-info > article > h3 {
+  margin: 2px 0;
+  color: #ff4a57;
+}
+
+.doing {
+  transform: rotate(-35deg);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -90px;
+  margin-top: 25px;
+  text-align: center;
+  background-color: #15748b;
+  width: 300px;
+  color: #fff;
+  padding: 5px 0px;
+}
+
+.will-fadeIn {
+  display: block;
+  width: 100%;
+  max-width: 640px;
+  margin: 20px auto;
+  background-color: #b7f7f7;
+  padding: 10px;
+}
+.will-fadeIn:nth-child(odd) {
+  background: #ffeded;
+}
+.will-fadeIn:first-child {
+  height: auto;
+  background-color: #edffff;
+}
+
+.fadeInRight {
+  animation: fadeInRight .5s ease .4s both;
+}
+@media (prefers-reduced-motion) {
+  .fadeInRight .animated {
+    animation: unset !important;
+    transition: none !important;
+  }
+}
+
+.fadeInLeft {
+  animation: fadeInLeft .5s ease .4s both;
+}
+@media (prefers-reduced-motion) {
+  .fadeInLeft .animated {
+    animation: unset !important;
+    transition: none !important;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }/*# sourceMappingURL=index.css.map */

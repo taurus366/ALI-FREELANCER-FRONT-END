@@ -253,17 +253,17 @@ div.index-container {
         font-size: 17px;
       }
     }
-
-    & > article.services-page-space {
-      border: 2px;
-      border-style: solid;
-      width: 50px;
-      margin: auto;
-      color: $navBarTextHoverColor;
-      text-align: center;
-      margin-top: 20px;
-    }
   }
+}
+
+article.space-page {
+  border: 2px;
+  border-style: solid;
+  width: 50px;
+  margin: auto;
+  color: $navBarTextHoverColor;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .services-whatcando {
@@ -432,6 +432,199 @@ div.index-container {
     // display: unset !important;
     visibility: visible !important;
     opacity: 1 !important;
+  }
+
+  section.about-me-page {
+    background: $mainBackgroundColor;
+    padding-top: 80px;
+  
+    & > article.about-me-page-title {
+        @include maxWidth();
+      color: white;
+      text-align: center;
+         & > h1 {
+          font-size: 50px;
+         }
+
+        & > p {
+          width: 50%;
+    margin: auto;
+    margin-top: 15px;
+    color: white;
+    font-size: 17px;
+        }
+    }
+  }
+
+
+  .about-me-page-pictures-infos-phones {
+    padding-bottom: 80px;
+    display: flex;
+    @include maxWidth();
+    // text-align: center;
+    justify-content: center;
+    color: white;
+
+    & > .about-me-page-picture {
+      // width: 47%;
+    }
+
+    & > .about-me-page-infos {
+      width: 57%;
+      margin-top: 30px;
+      // display: flex;
+      & > .about-me-page-info {
+        & > p {
+          margin-top: 10px;
+        }
+      }
+  
+  
+      & > .about-me-page-phones-info {
+        display: flex;
+        align-items: center;
+      // justify-content: space-between;
+      max-width: 70%;
+      }
+
+
+& > .about-me-page-phones-info-flex {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 70%;
+  margin-top: 20px;
+
+  & > .about-me-page-phones-info {
+   & > article {
+    margin: 10px 0;
+    & > h3 {
+      margin: 2px 0;
+      color: $navBarTextHoverColor;
+    }
+   }
+  }
+}
+
+    }
+  }
+
+
+  
+
+
+
+
+
+
+  // HTML SHOW ELEMENTS WHILE SCROLLING
+  @mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};   
+    @media (prefers-reduced-motion) {
+      .animated {
+        -webkit-animation: unset !important;
+        animation: unset !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+      }
+    }   
+  }
+  
+  @mixin keyframes($animation-name) {
+      @-webkit-keyframes #{$animation-name} {
+          @content;
+      }
+      @-moz-keyframes #{$animation-name} {
+          @content;
+      }  
+      @-ms-keyframes #{$animation-name} {
+          @content;
+      }
+      @-o-keyframes #{$animation-name} {
+          @content;
+      }  
+      @keyframes #{$animation-name} {
+          @content;
+      }
+  }
+  
+  @mixin transform($value){
+      -webkit-transform: $value;
+      -moz-transform: $value;
+      -ms-transform: $value;
+      -o-transform: $value;
+      transform: $value;
+  }
+  
+
+
+  
+  .doing{
+    transform: rotate(-35deg);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -90px;
+    margin-top: 25px;
+    text-align: center;
+    background-color: #15748b;
+    width: 300px;
+    color: #fff;
+    padding: 5px 0px;
+  }
+  
+  .will-fadeIn{
+    display: block;
+    width: 100%;
+    max-width: 640px;
+    margin: 20px auto;
+    background-color: #b7f7f7;
+    padding: 10px;
+    &:nth-child(odd) {
+      background: #ffeded
+    }
+    &:first-child{
+      height: auto;
+      background-color: #edffff;
+    }
+  }
+  
+  .fadeInRight {
+      @include animation('fadeInRight .5s ease .4s both');
+  
+  }
+  
+  .fadeInLeft {
+      @include animation('fadeInLeft .5s ease .4s both');
+  }
+  
+  @include keyframes(fadeInRight) {
+      from {
+          opacity: 0;
+          @include transform( translate3d(100%, 0, 0));
+      }
+  
+      to {
+          opacity: 1;
+          @include transform( translate3d(0, 0, 0));
+      }
+  }
+  
+  @include keyframes(fadeInLeft) {
+      from {
+          opacity: 0;
+          @include transform( translate3d(-100%, 0, 0));
+      }
+  
+      to {
+          opacity: 1;
+          @include transform( translate3d(0, 0, 0));
+      }
   }
 
 
