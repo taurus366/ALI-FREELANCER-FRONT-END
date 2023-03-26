@@ -35,7 +35,7 @@ $mainColor: $navBarTextHoverColor;
 .nav-bar {
   padding: 40px 0;
   background-color: $backgroundNavBar;
-  & > ul {
+  & > ul.pc-style {
    @include maxWidth();
     list-style-type: none;
     display: flex;
@@ -364,6 +364,74 @@ div.index-container {
     width: unset;
   }
 
+  nav.nav-bar {
+    & > ul.pc-style {
+      display: none;
+    }
+
+    & > .phone-menu {
+      display: unset !important;
+    }
+
+  }
+
+
+
 }
+
+ nav.nav-bar {
+  
+    & > .phone-menu {
+      display: none;
+    }
+
+    & > .phone-menu {
+      z-index: 9999;
+      position: fixed;
+      top: 11px;
+      left: 13px;
+      font-size: 1.5rem;
+      > i {
+        color: #fff;
+      }
+    }
+
+    & > .phone-style {
+  visibility: hidden;
+      opacity: 0;
+      transition: opacity 1.5s ease-out;
+
+      position: fixed;
+      z-index: 9999;
+      // border: solid orange;
+      font-size: 40px;
+      padding: 25px;
+      left: 13px;
+      top: 50px;
+      background: $navBarTextHoverColor;
+      border-radius: 10px;
+      & > li {
+        &:hover {
+          background-color: #ffa0a6;
+        }
+        list-style: none;
+        padding: 5px 0;
+        & > a {
+          color: white;
+          text-decoration: none;
+        
+        }
+
+      }
+
+    }
+
+  }
+
+  .p-active {
+    // display: unset !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
 
 

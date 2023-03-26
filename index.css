@@ -14,19 +14,19 @@ html, body {
   padding: 40px 0;
   background-color: #1f2235;
 }
-.nav-bar > ul {
+.nav-bar > ul.pc-style {
   max-width: 1170px;
   margin: auto;
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
 }
-.nav-bar > ul > li > a {
+.nav-bar > ul.pc-style > li > a {
   color: #ffffff;
   text-decoration: none;
   font-size: 18px;
 }
-.nav-bar > ul > li > a:hover {
+.nav-bar > ul.pc-style > li > a:hover {
   color: #ff4a57;
   transition: 0.5s;
 }
@@ -274,4 +274,52 @@ div.index-container > section.services-page > article.services-page-space {
   div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-name > p {
     width: unset;
   }
+  nav.nav-bar > ul.pc-style {
+    display: none;
+  }
+  nav.nav-bar > .phone-menu {
+    display: unset !important;
+  }
+}
+nav.nav-bar > .phone-menu {
+  display: none;
+}
+nav.nav-bar > .phone-menu {
+  z-index: 9999;
+  position: fixed;
+  top: 11px;
+  left: 13px;
+  font-size: 1.5rem;
+}
+nav.nav-bar > .phone-menu > i {
+  color: #fff;
+}
+nav.nav-bar > .phone-style {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.5s ease-out;
+  position: fixed;
+  z-index: 9999;
+  font-size: 40px;
+  padding: 25px;
+  left: 13px;
+  top: 50px;
+  background: #ff4a57;
+  border-radius: 10px;
+}
+nav.nav-bar > .phone-style > li {
+  list-style: none;
+  padding: 5px 0;
+}
+nav.nav-bar > .phone-style > li:hover {
+  background-color: #ffa0a6;
+}
+nav.nav-bar > .phone-style > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.p-active {
+  visibility: visible !important;
+  opacity: 1 !important;
 }/*# sourceMappingURL=index.css.map */
