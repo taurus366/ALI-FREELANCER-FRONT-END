@@ -216,6 +216,7 @@ div.index-container > section.services-page > article.services-page-space {
   list-style: none;
 }
 .services-whatcando > .services-whatcando-ul > li {
+  margin-top: 10px;
   width: 350px;
   background-color: #23263A;
   border-radius: 20px;
