@@ -386,6 +386,7 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
 
 .lets-work-page {
   background: #1f2235;
+  padding-bottom: 50px;
 }
 .lets-work-page > section {
   max-width: 1170px;
@@ -394,6 +395,7 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
 .lets-work-page > section.lets-work-container {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   max-width: 1170px;
   margin: auto;
 }

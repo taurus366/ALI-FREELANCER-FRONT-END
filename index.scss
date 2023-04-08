@@ -543,6 +543,7 @@ section.about-me-page {
 
 .lets-work-page {
   background: $servicesPageBackgroundColor;
+  padding-bottom: 50px;
 
   & > section {
     @include maxWidth();
@@ -553,7 +554,7 @@ section.about-me-page {
   & > section.lets-work-container {
     display: flex;
     align-items: center;
-    // justify-content: space-around;
+    justify-content: space-around;
     @include maxWidth();
 
     & > section.lets-work-left-side {
