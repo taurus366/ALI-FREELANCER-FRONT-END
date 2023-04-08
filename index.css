@@ -6,7 +6,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -209,6 +210,7 @@ article.space-page {
   max-width: 1170px;
   margin: auto;
   margin-top: 100px;
+  padding: 0 0 40px 0;
 }
 .services-whatcando > .services-whatcando-ul {
   display: flex;
@@ -219,7 +221,7 @@ article.space-page {
 .services-whatcando > .services-whatcando-ul > li {
   margin-top: 10px;
   width: 350px;
-  background-color: #23263A;
+  background-color: #23263a;
   border-radius: 20px;
   padding: 10px;
 }
@@ -498,6 +500,69 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   padding: 0 0 11px 0;
   color: white;
 }
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-dart {
+  position: relative;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-dart .language-percent {
+  right: 10%;
+  top: 5px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  border: 2px solid white;
+  padding: 3px 6px;
+  border-radius: 5.5px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-dart .language-percent::after {
+  border-style: solid;
+  border-width: 0.3125rem 0.3125rem 0 0;
+  border-color: #fff transparent transparent transparent;
+  bottom: -0.4375rem;
+  content: "";
+  left: 1.375rem;
+  position: absolute;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-dart .work-skill-line {
+  width: 90%;
+  height: 5px;
+  background: #ff4a57;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-dart .language-type {
+  padding: 0 0 11px 0;
+  color: white;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter {
+  position: relative;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .language-percent {
+  right: 20%;
+  top: 5px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  border: 2px solid white;
+  padding: 3px 6px;
+  border-radius: 5.5px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .language-percent::after {
+  border-style: solid;
+  border-width: 0.3125rem 0.3125rem 0 0;
+  border-color: #fff transparent transparent transparent;
+  bottom: -0.4375rem;
+  content: "";
+  left: 1.375rem;
+  position: absolute;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .work-skill-line {
+  width: 80%;
+  height: 5px;
+  background: #ff4a57;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .language-type {
+  padding: 0 0 11px 0;
+  color: white;
+}
 
 .doing {
   transform: rotate(-35deg);
@@ -517,16 +582,9 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   display: block;
   width: 100%;
   max-width: 640px;
-  margin: 20px auto;
-  background-color: #b7f7f7;
-  padding: 10px;
-}
-.will-fadeIn:nth-child(odd) {
-  background: #ffeded;
 }
 .will-fadeIn:first-child {
   height: auto;
-  background-color: #edffff;
 }
 
 .fadeInRight {
