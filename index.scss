@@ -32,6 +32,71 @@ $mainColor: $navBarTextHoverColor;
   margin: auto;
 }
 
+@mixin btn($article-class-name, $with) {
+
+  .#{$article-class-name} {
+    @if $with {
+      width: fit-content;
+    }
+    & > a > p {
+      border: 2px solid;
+      color: #fff;
+      font-weight: 500;
+      display: inline-block;
+      padding: 13px 40px;
+      border-radius: 50px;
+      font-size: 18px;
+      border-color: #ff4a57;
+      font-weight: 900;
+
+      &:hover {
+        background-color: #ff4a57;
+        transition: 0.5s;
+      }
+    }
+  }
+
+}
+
+@mixin language-line-percent($language-percentage,$percent-class, $line-class, $lang-type) {
+  .#{$percent-class} {
+      right: 100% - $language-percentage;
+      top: 5px;
+      font-size: 15px;
+      color: white;
+      position: absolute;
+
+      border: 2px solid white;
+      padding: 3px 6px;
+      border-radius: 5.5px;
+
+    }
+
+    .#{$percent-class}::after {
+      border-style: solid;
+      border-width: 0.3125rem 0.3125rem 0 0;
+      border-color: #fff transparent transparent transparent;
+      bottom: -0.4375rem;
+      content: "";
+      left: 1.375rem;
+      position: absolute;
+    }
+
+
+    .#{$line-class} {
+      width: $language-percentage;
+      height: 5px;
+      background: $navBarTextHoverColor;
+    }
+
+    .#{$lang-type} {
+        padding: 0 0 11px 0;
+        color: white;
+    }
+  }
+
+
+
 .nav-bar {
   padding: 40px 0;
   background-color: $backgroundNavBar;
@@ -52,7 +117,10 @@ $mainColor: $navBarTextHoverColor;
   }
 }
 
+
+
 div.index-container {
+
   & > section.hello-page {
     position: relative;
     background: $helloPageBackgroundColor;
@@ -207,25 +275,7 @@ div.index-container {
         }
       }
 
-      & > article.hello-page-owner-portfolio-btn {
-        width: fit-content;
-        & > a > p {
-          border: 2px solid;
-          color: #fff;
-          font-weight: 500;
-          display: inline-block;
-          padding: 13px 40px;
-          border-radius: 50px;
-          font-size: 18px;
-          border-color: #ff4a57;
-          font-weight: 900;
-
-          &:hover {
-            background-color: #ff4a57;
-            transition: 0.5s;
-          }
-        }
-      }
+      @include btn(hello-page-owner-portfolio-btn,true);
     }
   }
 
@@ -454,60 +504,143 @@ article.space-page {
     font-size: 17px;
         }
     }
-  }
 
-
-  .about-me-page-pictures-infos-phones {
-    padding-bottom: 80px;
-    display: flex;
-    @include maxWidth();
-    // text-align: center;
-    justify-content: center;
-    color: white;
-
-    & > .about-me-page-picture {
-      // width: 47%;
-    }
-
-    & > .about-me-page-infos {
-      width: 57%;
-      margin-top: 30px;
-      // display: flex;
-      & > .about-me-page-info {
-        & > p {
-          margin-top: 10px;
+    & >   .about-me-page-pictures-infos-phones {
+      padding-bottom: 80px;
+      display: flex;
+      @include maxWidth();
+      // text-align: center;
+      justify-content: center;
+      color: white;
+  
+      & > .about-me-page-picture {
+        // width: 47%;
+      }
+  
+      & > .about-me-page-infos {
+        width: 57%;
+        margin-top: 30px;
+        // display: flex;
+        & > .about-me-page-info {
+          & > p {
+            margin-top: 10px;
+          }
         }
-      }
+    
+    
+        & > .about-me-page-phones-info {
+          display: flex;
+          align-items: center;
+        // justify-content: space-between;
+        max-width: 70%;
+        }
   
   
-      & > .about-me-page-phones-info {
-        display: flex;
-        align-items: center;
-      // justify-content: space-between;
-      max-width: 70%;
+  & > .about-me-page-phones-info-flex {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70%;
+    margin-top: 20px;
+  
+    & > .about-me-page-phones-info {
+     & > article {
+      margin: 10px 0;
+      & > h3 {
+        margin: 2px 0;
+        color: $navBarTextHoverColor;
       }
-
-
-& > .about-me-page-phones-info-flex {
-  display: flex;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 70%;
-  margin-top: 20px;
-
-  & > .about-me-page-phones-info {
-   & > article {
-    margin: 10px 0;
-    & > h3 {
-      margin: 2px 0;
-      color: $navBarTextHoverColor;
+     }
     }
-   }
   }
-}
+  
+      }
+    }
+  }
+
+
+
+
+
+  .lets-work-page {
+    background: $servicesPageBackgroundColor;
+
+    & > section {
+   
+        @include maxWidth();
+        // width: 93%;
+        // margin: auto;
+      
+    }
+
+    & > section.lets-work-container {
+      display: flex;
+      align-items: center;
+      // justify-content: space-around;
+      @include maxWidth();
+
+
+      & > section.lets-work-left-side {
+
+        & > .title-expert {
+          padding: 100px 0 25px 0;
+          & > h1 {
+            color : $navBarTextHoverColor;
+          }
+        }
+    
+        & > .title-lets-work {
+         
+          & > h1 {
+            font-size: 50px;
+            width: 260px;
+            color: white;
+          }
+    
+        }
+    
+        & > .title-text {
+          padding: 30px 0;
+          & > p {
+           color: white;
+           width: 350px;
+           line-height: 23px;
+          }
+         }
+    
+         @include btn(hire-me-btn,false);
+      }
+    
+      & > section.lets-work-right-side {
+        width: 500px;
+
+        & > article {
+          padding: 9px 0;
+        }
+    
+        & > .lets-work-skill-java {
+              // width: 500px;
+              position: relative; 
+              // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+
+          @include language-line-percent(100%, language-percent, work-skill-line, language-type);
+    
+        }
+
+        & > .lets-work-skill-mysql {
+          // width: 500px;
+          position: relative; 
+          // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+
+      @include language-line-percent(95%, language-percent, work-skill-line, language-type);
 
     }
+    
+      }
+    }
+
+
   }
 
 

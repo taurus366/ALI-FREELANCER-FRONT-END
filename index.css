@@ -153,11 +153,11 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
 div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-picture > img {
   height: 615px;
 }
-div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-portfolio-btn {
+div.index-container > section.hello-page > section.hello-page-div .hello-page-owner-portfolio-btn {
   width: -moz-fit-content;
   width: fit-content;
 }
-div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-portfolio-btn > a > p {
+div.index-container > section.hello-page > section.hello-page-div .hello-page-owner-portfolio-btn > a > p {
   border: 2px solid;
   color: #fff;
   font-weight: 500;
@@ -168,7 +168,7 @@ div.index-container > section.hello-page > section.hello-page-div > article.hell
   border-color: #ff4a57;
   font-weight: 900;
 }
-div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-portfolio-btn > a > p:hover {
+div.index-container > section.hello-page > section.hello-page-div .hello-page-owner-portfolio-btn > a > p:hover {
   background-color: #ff4a57;
   transition: 0.5s;
 }
@@ -346,8 +346,7 @@ section.about-me-page > article.about-me-page-title > p {
   color: white;
   font-size: 17px;
 }
-
-.about-me-page-pictures-infos-phones {
+section.about-me-page > .about-me-page-pictures-infos-phones {
   padding-bottom: 80px;
   display: flex;
   max-width: 1170px;
@@ -355,19 +354,19 @@ section.about-me-page > article.about-me-page-title > p {
   justify-content: center;
   color: white;
 }
-.about-me-page-pictures-infos-phones > .about-me-page-infos {
+section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos {
   width: 57%;
   margin-top: 30px;
 }
-.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-info > p {
+section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-info > p {
   margin-top: 10px;
 }
-.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info {
+section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info {
   display: flex;
   align-items: center;
   max-width: 70%;
 }
-.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex {
+section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex {
   display: flex;
   display: flex;
   align-items: center;
@@ -375,12 +374,128 @@ section.about-me-page > article.about-me-page-title > p {
   max-width: 70%;
   margin-top: 20px;
 }
-.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex > .about-me-page-phones-info > article {
+section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex > .about-me-page-phones-info > article {
   margin: 10px 0;
 }
-.about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex > .about-me-page-phones-info > article > h3 {
+section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex > .about-me-page-phones-info > article > h3 {
   margin: 2px 0;
   color: #ff4a57;
+}
+
+.lets-work-page {
+  background: #1f2235;
+}
+.lets-work-page > section {
+  max-width: 1170px;
+  margin: auto;
+}
+.lets-work-page > section.lets-work-container {
+  display: flex;
+  align-items: center;
+  max-width: 1170px;
+  margin: auto;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-left-side > .title-expert {
+  padding: 100px 0 25px 0;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-left-side > .title-expert > h1 {
+  color: #ff4a57;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-left-side > .title-lets-work > h1 {
+  font-size: 50px;
+  width: 260px;
+  color: white;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-left-side > .title-text {
+  padding: 30px 0;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-left-side > .title-text > p {
+  color: white;
+  width: 350px;
+  line-height: 23px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-left-side .hire-me-btn > a > p {
+  border: 2px solid;
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  padding: 13px 40px;
+  border-radius: 50px;
+  font-size: 18px;
+  border-color: #ff4a57;
+  font-weight: 900;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-left-side .hire-me-btn > a > p:hover {
+  background-color: #ff4a57;
+  transition: 0.5s;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side {
+  width: 500px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > article {
+  padding: 9px 0;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-java {
+  position: relative;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-java .language-percent {
+  right: 0%;
+  top: 5px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  border: 2px solid white;
+  padding: 3px 6px;
+  border-radius: 5.5px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-java .language-percent::after {
+  border-style: solid;
+  border-width: 0.3125rem 0.3125rem 0 0;
+  border-color: #fff transparent transparent transparent;
+  bottom: -0.4375rem;
+  content: "";
+  left: 1.375rem;
+  position: absolute;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-java .work-skill-line {
+  width: 100%;
+  height: 5px;
+  background: #ff4a57;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-java .language-type {
+  padding: 0 0 11px 0;
+  color: white;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-mysql {
+  position: relative;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-mysql .language-percent {
+  right: 5%;
+  top: 5px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  border: 2px solid white;
+  padding: 3px 6px;
+  border-radius: 5.5px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-mysql .language-percent::after {
+  border-style: solid;
+  border-width: 0.3125rem 0.3125rem 0 0;
+  border-color: #fff transparent transparent transparent;
+  bottom: -0.4375rem;
+  content: "";
+  left: 1.375rem;
+  position: absolute;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-mysql .work-skill-line {
+  width: 95%;
+  height: 5px;
+  background: #ff4a57;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-mysql .language-type {
+  padding: 0 0 11px 0;
+  color: white;
 }
 
 .doing {
