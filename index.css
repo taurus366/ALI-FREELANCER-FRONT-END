@@ -533,7 +533,6 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
 }
 .lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter {
   position: relative;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s, transform var(--e-transform-transition-duration, 0.4s);
 }
 .lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .language-percent {
   right: 20%;

@@ -634,7 +634,7 @@ section.about-me-page {
       & > .lets-work-skill-flutter {
         // width: 500px;
         position: relative;
-        transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+        // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
 
         @include language-line-percent(
           80%,
