@@ -431,6 +431,7 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
 }
 .lets-work-page > section.lets-work-container > section.lets-work-right-side {
   width: 500px;
+  margin-right: 15px;
 }
 .lets-work-page > section.lets-work-container > section.lets-work-right-side > article {
   padding: 9px 0;
