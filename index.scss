@@ -688,6 +688,31 @@ section.about-me-page {
 }
 
 
+// aside {
+//   // position: absolute;
+//   & > .article.backtotop {
+//     // position: absolute;
+//     bottom: 40px;
+//     right: 30px;
+//   }
+// }
+
+
+#backtotop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  transform: rotate(-45deg);
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & > i {
+    color: $navBarTextHoverColor;
+  }
+}
+
 
 
 

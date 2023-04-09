@@ -658,6 +658,19 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   color: white;
 }
 
+#backtotop {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  transform: rotate(-45deg);
+}
+#backtotop:hover {
+  cursor: pointer;
+}
+#backtotop > i {
+  color: #ff4a57;
+}
+
 .doing {
   transform: rotate(-35deg);
   display: block;

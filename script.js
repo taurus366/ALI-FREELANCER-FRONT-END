@@ -49,3 +49,19 @@ function addFadeIn(repeat) {
                 }
             });
         }
+
+
+         //Back to top
+ $(window).on('scroll', function() {
+    if ($(this).scrollTop() >= 500) {
+        $('#backtotop').fadeIn(500);
+    } else {
+        $('#backtotop').fadeOut(500);
+    }
+});
+
+$('#backtotop').on('click', function() {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500);
+});
