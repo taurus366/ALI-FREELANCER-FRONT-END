@@ -599,7 +599,7 @@ section.about-me-page {
         // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
 
         @include language-line-percent(
-          100%,
+          98%,
           language-percent,
           work-skill-line,
           language-type
@@ -612,7 +612,7 @@ section.about-me-page {
         // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
 
         @include language-line-percent(
-          95%,
+          97%,
           language-percent,
           work-skill-line,
           language-type
@@ -632,13 +632,52 @@ section.about-me-page {
         );
       }
 
-      & > .lets-work-skill-flutter {
+      & > .lets-work-skill-angular {
         // width: 500px;
         position: relative;
         // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
 
         @include language-line-percent(
-          80%,
+          95%,
+          language-percent,
+          work-skill-line,
+          language-type
+        );
+      }
+
+      & > .lets-work-skill-html {
+        // width: 500px;
+        position: relative;
+        // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+
+        @include language-line-percent(
+          95%,
+          language-percent,
+          work-skill-line,
+          language-type
+        );
+      }
+
+      & > .lets-work-skill-js {
+        // width: 500px;
+        position: relative;
+        // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+
+        @include language-line-percent(
+          96%,
+          language-percent,
+          work-skill-line,
+          language-type
+        );
+      }
+
+      & > .lets-work-skill-junit {
+        // width: 500px;
+        position: relative;
+        // transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);
+
+        @include language-line-percent(
+          98%,
           language-percent,
           work-skill-line,
           language-type

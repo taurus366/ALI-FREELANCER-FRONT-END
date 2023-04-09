@@ -444,7 +444,7 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   position: relative;
 }
 .lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-java .language-percent {
-  right: 0%;
+  right: 2%;
   top: 5px;
   font-size: 15px;
   color: white;
@@ -463,7 +463,7 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   position: absolute;
 }
 .lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-java .work-skill-line {
-  width: 100%;
+  width: 98%;
   height: 5px;
   background: #ff4a57;
 }
@@ -475,7 +475,7 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   position: relative;
 }
 .lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-mysql .language-percent {
-  right: 5%;
+  right: 3%;
   top: 5px;
   font-size: 15px;
   color: white;
@@ -494,7 +494,7 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   position: absolute;
 }
 .lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-mysql .work-skill-line {
-  width: 95%;
+  width: 97%;
   height: 5px;
   background: #ff4a57;
 }
@@ -533,11 +533,11 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   padding: 0 0 11px 0;
   color: white;
 }
-.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter {
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-angular {
   position: relative;
 }
-.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .language-percent {
-  right: 20%;
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-angular .language-percent {
+  right: 5%;
   top: 5px;
   font-size: 15px;
   color: white;
@@ -546,7 +546,7 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   padding: 3px 6px;
   border-radius: 5.5px;
 }
-.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .language-percent::after {
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-angular .language-percent::after {
   border-style: solid;
   border-width: 0.3125rem 0.3125rem 0 0;
   border-color: #fff transparent transparent transparent;
@@ -555,12 +555,105 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   left: 1.375rem;
   position: absolute;
 }
-.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .work-skill-line {
-  width: 80%;
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-angular .work-skill-line {
+  width: 95%;
   height: 5px;
   background: #ff4a57;
 }
-.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-flutter .language-type {
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-angular .language-type {
+  padding: 0 0 11px 0;
+  color: white;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-html {
+  position: relative;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-html .language-percent {
+  right: 5%;
+  top: 5px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  border: 2px solid white;
+  padding: 3px 6px;
+  border-radius: 5.5px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-html .language-percent::after {
+  border-style: solid;
+  border-width: 0.3125rem 0.3125rem 0 0;
+  border-color: #fff transparent transparent transparent;
+  bottom: -0.4375rem;
+  content: "";
+  left: 1.375rem;
+  position: absolute;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-html .work-skill-line {
+  width: 95%;
+  height: 5px;
+  background: #ff4a57;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-html .language-type {
+  padding: 0 0 11px 0;
+  color: white;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-js {
+  position: relative;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-js .language-percent {
+  right: 4%;
+  top: 5px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  border: 2px solid white;
+  padding: 3px 6px;
+  border-radius: 5.5px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-js .language-percent::after {
+  border-style: solid;
+  border-width: 0.3125rem 0.3125rem 0 0;
+  border-color: #fff transparent transparent transparent;
+  bottom: -0.4375rem;
+  content: "";
+  left: 1.375rem;
+  position: absolute;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-js .work-skill-line {
+  width: 96%;
+  height: 5px;
+  background: #ff4a57;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-js .language-type {
+  padding: 0 0 11px 0;
+  color: white;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-junit {
+  position: relative;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-junit .language-percent {
+  right: 2%;
+  top: 5px;
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  border: 2px solid white;
+  padding: 3px 6px;
+  border-radius: 5.5px;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-junit .language-percent::after {
+  border-style: solid;
+  border-width: 0.3125rem 0.3125rem 0 0;
+  border-color: #fff transparent transparent transparent;
+  bottom: -0.4375rem;
+  content: "";
+  left: 1.375rem;
+  position: absolute;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-junit .work-skill-line {
+  width: 98%;
+  height: 5px;
+  background: #ff4a57;
+}
+.lets-work-page > section.lets-work-container > section.lets-work-right-side > .lets-work-skill-junit .language-type {
   padding: 0 0 11px 0;
   color: white;
 }
