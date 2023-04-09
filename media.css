@@ -20,6 +20,18 @@
   }
 }
 @media only screen and (max-width: 778px) {
+  section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-phones-info-flex {
+    max-width: unset !important;
+  }
+  section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos {
+    width: 90% !important;
+  }
+  section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-info > h2 {
+    text-align: center !important;
+  }
+  section.about-me-page > article.about-me-page-title > p {
+    width: 90% !important;
+  }
   article.hello-page-owner-picture {
     display: none;
   }
@@ -27,7 +39,7 @@
     justify-content: center;
   }
   div.index-container > section.hello-page > section.hello-page-div > article.hello-page-owner-name > p {
-    width: unset;
+    width: 95% !important;
   }
   nav.nav-bar > ul.pc-style {
     display: none;

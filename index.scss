@@ -455,6 +455,11 @@ section.about-me-page {
       margin-top: 30px;
       // display: flex;
       & > .about-me-page-info {
+        
+        & > h2 {
+          font-size: 50px;
+        }
+        
         & > p {
           margin-top: 10px;
         }

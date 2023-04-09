@@ -328,6 +328,9 @@ section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-in
   width: 57%;
   margin-top: 30px;
 }
+section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-info > h2 {
+  font-size: 50px;
+}
 section.about-me-page > .about-me-page-pictures-infos-phones > .about-me-page-infos > .about-me-page-info > p {
   margin-top: 10px;
 }
