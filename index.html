@@ -11,6 +11,7 @@
     <link rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/chat/chat.css">
     <title>FREELANCER</title>
 </head>
 
@@ -327,6 +328,74 @@
         <article id="backtotop">
             <i class="fa fa-2x fa-rocket"></i>
         </article>
+
+        <div class="chat-box">
+            <div id="header" class="header">
+                <div class="unread-messages-circle" id="unread-messages-count">
+                    <span>4</span>
+                </div>
+              <div class="avatar-wrapper avatar-big">
+                <img src="images/all-removebg-preview.png" alt="avatar" />
+              </div>
+              <span class="name">ALI ZINAL</span>
+              <span class="dev-status dev-status-offline"></span>
+              <span class="dev-status-text dev-status-text-offline"></span>
+              <span class="options">
+                <i class="fas fa-ellipsis-h"></i>
+              </span>
+            </div>
+            <div id="chat-room" class="chat-room d-none">
+              <div class="message message-left">
+                <div class="avatar-wrapper avatar-small">
+                  <img src="images/all-removebg-preview.png" alt="avatar" />
+                </div>
+                <div class="bubble bubble-light">
+                  Hey anhat!
+                </div>
+              </div>
+              <div class="message message-right">
+                <div class="avatar-wrapper avatar-small">
+                  <img src="images/client-img.png" alt="avatar" />
+                </div>
+                <div class="bubble bubble-dark">
+                  what is going on?
+                </div>
+              </div>
+            </div>
+            <div id="type-area" class="type-area d-none">
+              <div class="input-wrapper">
+                <input type="text" id="inputText" placeholder="Type messages here..." />
+              </div>
+              <span id="button-add" class="button-add">
+                <i class="fas fa-plus-circle"></i>
+                <div id="others" class="others">
+                  <span id="emoji-button" class="emoji-button">
+                    <i class="far fa-laugh"></i>
+                    <div id="emoji-box" class="emoji-box">
+                      <span>&#x1f604;</span>
+                      <span>😀</span>
+                      <span>😂</span>
+                      <span>😭</span>
+                      <span>😍</span>
+                      <span>🤮</span>
+                      <span>🤑</span>
+                      <span>😖</span>
+                      <span>😷</span>
+                    </div>
+                  </span>
+                  <span class="image-button">
+                    <i class="far fa-image"></i>
+                  </span>
+                  <span>
+                    <i class="fas fa-paperclip"></i>
+                  </span>
+                </div>
+              </span>
+              <button id="button-send" class="button-send">Send</button>
+            </div>
+          
+          </div>
+
     </aside>
 
     <footer></footer>
@@ -334,6 +403,9 @@
 
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.6.1/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="chat/chat.js"></script>
 </html>
